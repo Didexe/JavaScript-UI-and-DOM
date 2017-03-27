@@ -24,8 +24,51 @@
 	<body>
 		<div id="forum-container"></div>
 
+		 <!--<script id="forum-template" type='text/x-handlebars-template'>	
+		 	<h1>{{title}}</h1>
+			 <ul>
+			 	{{#posts}}
+				 <li>
+					 <div class="post">
+						 <p class="author">
+							 {{#if author}}
+							 <a href="/user/{{author}}" class="user">{{author}}</a>
+							 {{else}}
+							 <a class="anonymous">Anonymous</a>
+							 {{/if}}
+						 </p>
+						 <pre class="content">{{{text}}}</pre>
+					 </div>
+					 {{#if comments}}
+							<ul>
+								{{#comments}}
+									{{#unless deleted}}
+									<li>
+										<div class="comment">
+											<p class="author">
+												{{#if author}}
+												<a href="/user/{{author}}" class="user">{{author}}</a>
+												{{else}}
+												<a class="anonymous">Anonymous</a>
+												{{/if}}
+											</p>
+											<pre class="content">{{{text}}}</pre>
+										</div>
+									</li>
+									{{else}}
+									{{/unless}}
+								{{/comments}}
+							</ul>
+					 {{/if}}
+				 </li>
+				{{/posts}}
+			</ul>
+
+    	</script>-->
+
 		<script src="./handlebars-v4.0.5.js"></script>
-		<script src="./solution.js"></script>
+		<script src="./solution-didexe.js"></script>
 		<script src="./load.js"></script>
+		<!--<script src="./main.js"></script>-->
 	</body>
 </html>
